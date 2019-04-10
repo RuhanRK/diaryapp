@@ -1,15 +1,15 @@
 const filesToCache = [
   "/",
-  "index.html",
-  "offline.html",
-  "404.html",
-  "css/style.css",
-  "js/main.js",
-  "images/favicon.png",
-  "images/icons/icon-120x120.png",
-  "images/icons/icon-144x144.png",
-  "images/icons/icon-152x152.png",
-  "images/icons/icon-192x192.png"
+  "/index.html",
+  "/offline.html",
+  "/404.html",
+  "/css/style.css",
+  "/js/main.js",
+  "/images/favicon.png",
+  "/images/icons/icon-120x120.png",
+  "/images/icons/icon-144x144.png",
+  "/images/icons/icon-152x152.png",
+  "/images/icons/icon-192x192.png"
 ];
 
 const staticCacheName = "diary-app";
