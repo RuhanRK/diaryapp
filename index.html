@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- TODO add manifest here -->
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#FAEBD7" />
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Diary App" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/icons/icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#FAEBD7" />
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+
+    <title>Write Your Own Diary</title>
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12">
+            <h1 class="text-muted text-center">Your Personal Diary</h1>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-sm-12 col-md-6 mx-auto">
+            <form class="shadow rounded p-5">
+              <div class="form-group">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Your Name"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="textbox"></label>
+                <textarea
+                  id="textbox"
+                  class="form-control"
+                  aria-label="With textarea"
+                  placeholder="Write your story in your diary"
+                  rows="2"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="date"></label>
+                <input type="date" name="date" id="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="img"></label>
+                <input
+                  type="text"
+                  name="img"
+                  id="img"
+                  placeholder="Image link"
+                  class="form-control"
+                />
+              </div>
+              <button class="btn btn-block btn-outline-dark">
+                Create
+              </button>
+            </form>
+            <div class="shadow rounded mt-3">
+              <button
+                type="submit"
+                id="clearAll"
+                class="btn btn-block btn-outline-danger"
+              >
+                Clear All Diaries
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row m-sm-0 mx-auto" id="diaryBox"></div>
+      </div>
+    </div>
+
+    <!-- Own JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
